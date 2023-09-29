@@ -35,6 +35,8 @@ animals.forEach((object) => {
   );
 });
 
+window.print('hola')
+
 // funcion alternativa mas eficiente
 /* tasks.forEach(({ title, done }) => {
     const element = `
@@ -43,3 +45,13 @@ animals.forEach((object) => {
                   <label for='${title}' >${title} </label>   
          </li>`;
 app.insertAdjacentHTML('beforeend', element);}); */
+
+
+/* posición de insertAdjacentHTML:
+
+Un DOMString que representa la posición relativa al elemento, y deberá ser una de las siguientes cadenas:
+
+'beforebegin': Antes que el propio elemento.
+'afterbegin': Justo dentro del elemento, antes de su primer elemento hijo.
+'beforeend': Justo dentro del elemento, después de su último elemento hijo.
+'afterend': Después del propio elemento. */
