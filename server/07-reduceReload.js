@@ -8,7 +8,6 @@
 }
 
 */
-
 const numbers = [1, 3, 2, 3];
 
 const rts = numbers.reduce((obj, item) => {

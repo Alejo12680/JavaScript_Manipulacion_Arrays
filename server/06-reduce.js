@@ -32,10 +32,10 @@ const sum3 = totals.reduce((acumula, element, index) => {
 }, 0);
 console.log('sum3', sum3);
 
-// la funcion de reduce es asi 
+// la funcion de REDUCE
 const reduce = totals.reduce((acumulador, item) => acumulador + item, 0) // el cero '0' es el estado inicial
-
 console.log(reduce);
+
 
 // Otra forma de ver como itera el reduce es esta 
 const total = [1, 2, 3, 4]
