@@ -102,5 +102,38 @@ const rta2 = Object.values(calendars).flatMap(item => item.map(item => item.star
 console.log(rta2);
 
 
+// Ejercicio Medium
+
+/* En este desafío tienes array de strings y cada línea es un fragmento, el Zen de Python, tu reto es hacer un método que retorne el número de palabras totales que tiene el array. */
+
+const array = [
+  "Beautiful is better than ugly",
+  "Explicit is better than implicit",
+  "Simple is better than complex",
+  "Complex is better than complicated",
+]
 
 
+// Primera solucion:
+const palabras = (array) => {
+  return array.join(' ').split(' ').length;
+}
+
+console.log('reto:', palabras(array));
+
+
+// Segunda Solucion
+const palabras_2 = (array) => {
+  // Al usar Flatmap con split divide, cada linea en palabras y aplanar el resultado en un solo array, con la propiedad lenght obtiene el número, total de palabras.
+  return array.flatMap(item => item.split(' ')).length
+}
+
+console.log('reto:', palabras_2(array));
+
+
+// Tercera Solucion
+const palabras_3 = (array) => {
+  return array.map(item => item.split(' ')).flat().length;
+}
+
+console.log('reto:', palabras_3(array));

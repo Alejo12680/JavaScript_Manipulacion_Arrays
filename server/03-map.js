@@ -77,7 +77,7 @@ Output: [2, 2, -4, -6]*/
 
 /* Resultado: */
 
-export function multiplyElements(array) {
+function multiplyElements(array) {
     // Tu código aquí👈
     return array.map(numero => numero * 2);
  }
