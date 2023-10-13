@@ -66,3 +66,23 @@ console.log(animals.slice(-2));
 
 console.log(animals.slice(2, -1));
 // expected output: Array ["camel", "duck"]
+
+
+/* El metodo .splice(), no solamente sirve para borrar en cierta forma un elemento sino también para agregarlos al index del array que tu quieres, el método .splice() se utiliza en JavaScript y tiene dos usos principales: eliminar elementos de un array y agregar elementos en una posición específica del array...Ej: */
+
+const holaMundo = ['Maria', 'Andres', 'Cecilia'];
+console.log('Original:', holaMundo);
+/* Y quizás lo que quieres es añadir a 'Roberto' después de Andres y antes de cecilia. 
+Buscamos el index con el findIndex de cecilia tal como el profe nos enseño.
+*/
+
+// Buscamos el índice de 'Cecilia' en el array
+const index = holaMundo.findIndex(element => element === 'Cecilia');
+
+// Usamos el método splice para agregar 'Roberto' en la posición deseada
+holaMundo.splice(index, 0, 'Roberto');
+
+// El array holaMundo ahora contendrá 'Roberto' en la posición correcta
+console.log('Agregado:', holaMundo);
+
+/* listo, pones tu index de celcilia, no le ponemos un 1 porque no queremos eliminar ningún elemento hacia la derecha sino un 0, pones la coma y pones el o los elementos que quieres agregar allí. */

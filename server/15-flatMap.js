@@ -137,3 +137,11 @@ const palabras_3 = (array) => {
 }
 
 console.log('reto:', palabras_3(array));
+
+
+// cuarta Solucion
+const palabras_4 = (array) => {
+  return array.flatMap(item => item.split(' ').length).reduce((sum, item) => sum += item, 0);
+}
+
+console.log('reto:', palabras_4(array));
