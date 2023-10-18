@@ -1,5 +1,5 @@
 /* Este método REDUCE, efectivamente hace eso. Solo reduce a un solo valor y no devuelve otro array, simplemente un valor.
- Se utiliza muchísimo para hacer cálculos a partir de la información de un array. En su composición, tiene como argumentos de la función del primer parámetro, al acumulador y como segundo parámetro al elemento por el que va iterando el loop. Y como segundo argumento del reduce(), se pasa el valor inicial del acumulador.  
+ Se utiliza muchísimo para hacer cálculos a partir de la información de un array. En su composición, tiene como argumentos de la función del primer parámetro, al acumulador y como segundo parámetro al elemento por el que va iterando el loop. Y como segundo argumento del reduce(), se pasa el valor inicial del acumulador. es un Metodo Inmutable.
  */
 
 // con un FOR

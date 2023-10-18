@@ -26,7 +26,7 @@ console.log('newMap', newArrayMap);
 
 /* Ejercicio para el html  */
 
-const products = [
+/* const products = [
     { title: 'Burger', price: 121 },
     { title: 'Pizza', price: 202 },
 ];
@@ -38,7 +38,7 @@ const list = products.map(product => {
         `<li>${product.title} - ${product.price}</li>`);
 })
 
-list.join('');
+list.join(''); */
 
 
 /* posición de insertAdjacentHTML:
@@ -83,4 +83,15 @@ function multiplyElements(array) {
  }
  
  console.log(multiplyElements([2, 4, 5, 6, 8]))
+
+
+//  Examen de Map
+
+const array = [{age: 1}, {age:2}]; 
+const rta = array.map(item => {   
+  item.name = 'My name';
+  return item; 
+})
+
+console.log('Respuesta:', rta);
 
